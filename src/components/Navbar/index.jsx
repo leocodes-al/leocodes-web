@@ -1,6 +1,9 @@
 import { NavbarContainer, Logo, NavLinksContainer, LinkNavbar, BtnNavbar } from './styles'
 
 const Navbar = () => {
+
+  const simboloCode = "</>"
+
   return (
     <>
       <NavbarContainer>
@@ -8,7 +11,7 @@ const Navbar = () => {
 
         <NavLinksContainer>
           <LinkNavbar href="#home">Home</LinkNavbar>
-          <LinkNavbar href="#sobre">Sobre</LinkNavbar>
+          <LinkNavbar href="#about">Sobre</LinkNavbar>
           <LinkNavbar href="#projetos">Projetos</LinkNavbar>
           <LinkNavbar href="#skills">Skills</LinkNavbar>
           <LinkNavbar href="#formacao">Formação</LinkNavbar>

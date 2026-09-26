@@ -12,7 +12,7 @@ import {
   BtnContact
 } from './styles'
 
-import image from '../../img/CodeHero.png'
+import image from '../../assets/CodeHero.png'
 
 const Hero = () => {
 
