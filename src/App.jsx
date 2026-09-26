@@ -1,14 +1,14 @@
 import React from 'react'
-import { GlobalStyle, Titulo, Paragrafo } from './styles/GlobalStyles'
+import { GlobalStyle } from './styles/GlobalStyles'
+import Navbar from './components/Navbar/index'
 
 
 function App() {
 
   return (
     <>
-      <GlobalStyle/>
-      <Titulo>Bem-vindo ao meu projeto!</Titulo>
-      <Paragrafo>sou um paragrafo</Paragrafo>
+    <GlobalStyle/>
+    <Navbar/>
     </>
   )
 }
