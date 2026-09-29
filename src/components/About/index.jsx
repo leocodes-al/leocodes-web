@@ -12,7 +12,7 @@ import {
 } from './styles'
 
 const About = () => {
-
+ 
   return (
     <>
       <Main>
