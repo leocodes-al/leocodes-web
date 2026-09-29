@@ -2,21 +2,19 @@ import { NavbarContainer, Logo, NavLinksContainer, LinkNavbar, BtnNavbar } from 
 
 const Navbar = () => {
 
-  const simboloCode = "</>"
-
   return (
     <>
       <NavbarContainer>
         <Logo>LEO <span>.</span> CODES</Logo>
 
         <NavLinksContainer>
-          <LinkNavbar href="#home">Home</LinkNavbar>
+          <LinkNavbar href="#home">Início</LinkNavbar>
           <LinkNavbar href="#about">Sobre</LinkNavbar>
-          <LinkNavbar href="#projetos">Projetos</LinkNavbar>
-          <LinkNavbar href="#skills">Skills</LinkNavbar>
-          <LinkNavbar href="#formacao">Formação</LinkNavbar>
+          <LinkNavbar href="#projects">Projetos</LinkNavbar>
+          <LinkNavbar href="#skills">Tecnologias</LinkNavbar>
+          <LinkNavbar href="#education">Formação</LinkNavbar>
           <LinkNavbar href="#lab">Lab</LinkNavbar>
-          <LinkNavbar href="#contato">Contato</LinkNavbar>
+          <LinkNavbar href="#contact">Contato</LinkNavbar>
         </NavLinksContainer>
 
         <BtnNavbar>Vamos conversar</BtnNavbar>
