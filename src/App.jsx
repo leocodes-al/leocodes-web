@@ -8,6 +8,8 @@ import Home from './components/Home/index'
 import About from './components/About/index'
 import Skills from './components/Skills/index'
 import Education from './components/Education/index'
+import Contact from './components/Contact/index'
+import Footer from './components/Footer/index'
 
 
 function App() {
@@ -36,6 +38,13 @@ function App() {
         <Education />
       </div>
       <Divider />
+
+      <div id="contact">
+        <Contact />
+      </div>
+      <Divider />
+
+      <Footer />
     </>
   )
 }

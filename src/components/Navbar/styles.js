@@ -54,23 +54,29 @@ export const LinkNavbar = styled.a`
 
 `
 
-export const BtnNavbar = styled.button`
+export const BtnNavbar = styled.a`
   width: 180px;
   height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   font-size: 0.8rem;
   font-weight: bold;
 
   border-radius: 10px;
-
   background: #0A0C10;
   color: #00F0FF;
   border: 1px solid rgb(0, 240, 255);
+
+  text-decoration: none;
   cursor: pointer;
+
   transition: all 0.3s ease;
 
   &:hover {
     background: rgba(0, 240, 255, 0.1);
     box-shadow: rgba(0, 240, 255, 0.2) 0px 0px 15px;
   }
-`
+`;

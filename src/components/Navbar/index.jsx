@@ -13,11 +13,11 @@ const Navbar = () => {
           <LinkNavbar href="#projects">Projetos</LinkNavbar>
           <LinkNavbar href="#skills">Tecnologias</LinkNavbar>
           <LinkNavbar href="#education">Formação</LinkNavbar>
-          <LinkNavbar href="#lab">Lab</LinkNavbar>
+{/*           <LinkNavbar href="#lab">Lab</LinkNavbar> */}
           <LinkNavbar href="#contact">Contato</LinkNavbar>
         </NavLinksContainer>
 
-        <BtnNavbar>Vamos conversar</BtnNavbar>
+        <BtnNavbar href="#contact">Vamos conversar</BtnNavbar>
       </NavbarContainer>
     </>
   )
