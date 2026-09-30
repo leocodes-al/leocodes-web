@@ -38,8 +38,8 @@ const Home = () => {
           </Information>
 
           <ContainerBtn>
-            <BtnProject>Ver meus projetos</BtnProject>
-            <BtnContact>Entrar em contato</BtnContact>
+            <BtnProject href="#projects">Ver meus projetos</BtnProject>
+            <BtnContact href="#contact">Entrar em contato</BtnContact>
           </ContainerBtn>
         </ContainerTitle>
 

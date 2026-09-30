@@ -72,41 +72,51 @@ export const ContainerBtn = styled.div`
   margin-top: 2.5rem;
 `;
 
-export const BtnProject = styled.button`
+export const BtnProject = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 200px;
   height: 60px;
 
   background: #6366F1;
   color: #FFFFFF;
+
   font-size: 1rem;
   font-weight: bold;
-  
+  text-decoration: none;
+
   border-radius: 8px;
-  border: none;
-  cursor: pointer;
   transition: 0.3s;
 
-  &:hover{
+  &:hover {
     transform: translateY(-2px);
     box-shadow: rgba(99, 102, 241, 0.35) 0px 8px 20px;
   }
 `;
 
-export const BtnContact = styled.button`
+export const BtnContact = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 200px;
   height: 60px;
 
   background: #12161F;
   color: #FFFFFF;
+
   font-size: 1rem;
   font-weight: bold;
+  text-decoration: none;
 
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  cursor: pointer;
+
   transition: 0.3s;
 
-  &:hover{
+  &:hover {
     border-color: rgb(142, 154, 171);
     background: rgb(26, 32, 44);
   }
