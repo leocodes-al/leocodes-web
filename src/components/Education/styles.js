@@ -10,6 +10,12 @@ export const Main = styled.main`
   flex-direction: column;
   padding: 0 15%;
   gap: 50px;
+
+  @media (max-width: 600px) {
+    height: auto;
+    padding: 60px 8%;
+    gap: 35px;
+  }
 `;
 
 export const ContainerTitle = styled.div`
@@ -20,6 +26,11 @@ export const ContainerTitle = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+
+  @media (max-width: 600px) {
+    height: auto;
+    gap: 12px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -27,11 +38,19 @@ export const Title = styled.h2`
   color: #F7FAFC;
 
   font-family: "Space Grotesk", sans-serif;
+
+  @media (max-width: 600px) {
+    font-size: 2rem;
+  }
 `;
 
 export const SubTitle = styled.p`
   color: rgb(142, 154, 171);
   font-size: 1rem;
+
+  @media (max-width: 600px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const ContainerEducation = styled.div`
@@ -41,6 +60,10 @@ export const ContainerEducation = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+
+  @media (max-width: 600px) {
+    gap: 12px;
+  }
 `;
 
 export const BoxEducation = styled.div`
@@ -56,15 +79,27 @@ export const BoxEducation = styled.div`
   flex-direction: column;
   gap: 5px;
   padding: 24px;
+
+  @media (max-width: 600px) {
+    padding: 18px;
+  }
 `;
 
 export const TitleBox = styled.h3`
   font-size: 1.1rem;
   color: #F7FAFC;
+
+  @media (max-width: 600px) {
+    font-size: 0.95rem;
+  }
 `;
 
 export const Caption = styled.p`
   color: rgb(0, 240, 255);
   font-size: 0.875rem;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 600px) {
+    font-size: 0.75rem;
+  }
 `;

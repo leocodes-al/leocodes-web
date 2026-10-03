@@ -8,6 +8,16 @@ export const Main = styled.main`
   align-items: center;
   justify-content: space-between;
   padding: 0 15%;
+
+  @media (max-width: 600px) {
+    height: auto;
+    padding: 60px 8%;
+
+    flex-direction: column;
+    align-items: normal;
+    justify-content: center;
+    gap: 50px;
+  }
 `;
 
 /* contatos */
@@ -18,17 +28,30 @@ export const ContainerContact = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export const TitleContact = styled.h2`
   font-size: 2.5rem;
   font-family: "Space Grotesk", sans-serif;
   color: #F7FAFC;
+
+  @media (max-width: 600px) {
+    font-size: 2rem;
+  }
 `;
 
 export const SubTitle = styled.p`
   font-size: 1rem;
   color: rgb(142, 154, 171);
+
+  @media (max-width: 600px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const ContainerLinks = styled.div`
@@ -39,6 +62,11 @@ export const ContainerLinks = styled.div`
   flex-direction: column;
   gap: 16px;
   margin-top: 2rem;
+
+  @media (max-width: 600px) {
+    margin-top: 1.5rem;
+    gap: 12px;
+  }
 `;
 
 export const SpanLinks = styled.span`
@@ -54,6 +82,10 @@ export const ContainerForm = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 20px;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const Form = styled.form`
@@ -61,6 +93,10 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (max-width: 600px) {
+    gap: 16px;
+  }
 `;
 
 export const FormGroup = styled.div`
@@ -72,6 +108,10 @@ export const FormGroup = styled.div`
 export const LabelForm = styled.label`
   font-size: 0.9rem;
   color: rgb(142, 154, 171);
+
+  @media (max-width: 600px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const Input = styled.input`
@@ -86,7 +126,6 @@ export const Input = styled.input`
     outline: none;
     border-color: rgb(0, 240, 255);
   }
-  
 `;
 
 export const Select = styled.select`
@@ -106,7 +145,7 @@ export const Select = styled.select`
 export const TextArea = styled.textarea`
   min-height: 140px;
 
-  color: rgb(255, 255, 255);  
+  color: rgb(255, 255, 255);
   background: rgb(18, 22, 31);
 
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -119,6 +158,10 @@ export const TextArea = styled.textarea`
   &:focus {
     outline: none;
     border-color: rgb(0, 240, 255);
+  }
+
+  @media (max-width: 600px) {
+    min-height: 120px;
   }
 `;
 
@@ -137,7 +180,7 @@ export const BtnForm = styled.button`
   transition: 0.3s;
   border: none;
 
-  &:hover{
+  &:hover {
     transform: translateY(-2px);
     box-shadow: rgba(99, 102, 241, 0.35) 0px 8px 20px;
   }

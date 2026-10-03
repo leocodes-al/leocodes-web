@@ -10,6 +10,13 @@ export const Main = styled.main`
   align-items: center;
   flex-direction: column;
   gap: 30px;
+
+  @media (max-width: 600px) {
+    height: auto;
+    padding: 60px 8%;
+
+    gap: 30px;
+  }
 `;
 
 export const ContainerStack = styled.div`
@@ -18,18 +25,30 @@ export const ContainerStack = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 600px) {
+    height: auto;
+  }
 `;
 
 export const TitleStack = styled.h2`
   font-family: "Space Grotesk", sans-serif;
   font-size: 2.25rem;
   margin-bottom: 12px;
-  color: #F7FAFC;
+  color: #f7fafc;
+
+  @media (max-width: 600px) {
+    font-size: 2rem;
+  }
 `;
 
 export const SubTitle = styled.p`
   color: rgb(142, 154, 171);
   font-size: 1rem;
+
+  @media (max-width: 600px) {
+    font-size: 0.74rem;
+  }
 `;
 
 export const ContainerSkills = styled.div`
@@ -40,11 +59,17 @@ export const ContainerSkills = styled.div`
   grid-template-columns: repeat(5, 1fr);
 
   gap: 20px;
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
 `;
 
 export const BoxSkill = styled.div`
   width: 100%;
   height: auto;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,8 +85,13 @@ export const BoxSkill = styled.div`
   padding: 20px;
   transition: 0.2s;
 
-  &:hover{
+  &:hover {
     border-color: rgb(0, 240, 255);
     transform: translateY(-2px);
+  }
+
+  @media (max-width: 600px) {
+    padding: 15px;
+    font-size: 0.8rem;
   }
 `;

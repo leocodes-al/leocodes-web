@@ -58,7 +58,7 @@ const Home = () => {
             {"  "}<Key>core</Key>: <Punctuation>[</Punctuation><String>'React'</String>, <String>'JavaScript'</String><Punctuation>]</Punctuation>,{"\n"}
             {"  "}<Key>styling</Key>: <Punctuation>[</Punctuation><String>'styled-components'</String><Punctuation>]</Punctuation>,{"\n"}
             {"  "}<Key>focus</Key>: <Punctuation>[</Punctuation><String>'UI/UX & Performance'</String><Punctuation>]</Punctuation>{"\n"}
-            
+
             <Punctuation>{"}"}</Punctuation>;
           </CodeBody>
         </ContainerCode>
