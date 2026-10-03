@@ -66,6 +66,7 @@ export const ContainerText = styled.div`
   margin-top: 5rem;
 
   @media (max-width: 600px) {
+    width: 350px;
     margin-top: 2rem;
   }
 `;

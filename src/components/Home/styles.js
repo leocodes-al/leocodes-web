@@ -172,6 +172,11 @@ export const BtnProject = styled.a`
     width: 150px;
     height: 50px;
     font-size: 0.8rem;
+
+    &:hover {
+      transform: none;
+      box-shadow: none;
+    }
   }
 `;
 
