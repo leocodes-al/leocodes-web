@@ -141,7 +141,7 @@ export const Time = styled.div`
     transform: translateX(-50%);
 
     width: 2px;
-    height: 165px;
+    height: 175px;
 
     background: rgba(255, 255, 255, 15%);
     z-index: -1;
@@ -156,7 +156,7 @@ export const Time = styled.div`
     transform: translateX(-50%);
 
     width: 2px;
-    height: 165px;
+    height: 175px;
 
     background: rgba(255, 255, 255, 15%);
     z-index: -1;
@@ -173,7 +173,7 @@ export const ContainerTrajectory = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 
   @media (max-width: 600px) {
     width: 300px;
@@ -181,7 +181,7 @@ export const ContainerTrajectory = styled.div`
 `;
 
 export const Trajectory = styled.div`
-  width: 100%;
+  width: 90%;
   height: auto;
   background: #12161f;
 

@@ -19,6 +19,12 @@ export const Main = styled.main`
 
   background-color: rgba(10, 12, 16, 0.6);
   backdrop-filter: blur(12px);
+
+  @media (max-width: 600px) {
+    height: 100%;
+    gap: 35px;
+    padding: 0 8%;
+  }
 `;
 
 export const ContainerAlert = styled.div`
@@ -31,6 +37,10 @@ export const ContainerAlert = styled.div`
   flex-direction: column;
   gap: 10px;
 
+  @media (max-width: 600px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 export const TitleAlert = styled.h2`
@@ -39,11 +49,19 @@ export const TitleAlert = styled.h2`
 
   color: #f7fafc;
   font-family: "Space Grotesk", sans-serif;
+
+  @media (max-width: 600px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const MessageAlert = styled.p`
   font-size: 1.2rem;
-  color: #8E9AAB; 
+  color: #8E9AAB;
+
+  @media (max-width: 600px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const BtnAlert = styled.button`
@@ -70,5 +88,10 @@ export const BtnAlert = styled.button`
   &:hover {
     transform: translateY(-2px);
     box-shadow: rgba(99, 102, 241, 0.35) 0px 8px 20px;
+  }
+
+  @media (max-width: 600px) {
+    width: 150px;
+    font-size: 0.9rem;
   }
 `;
