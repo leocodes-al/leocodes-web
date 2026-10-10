@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useForm } from "react-hook-form"
 
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 
@@ -16,7 +17,8 @@ import {
   Input,
   Select,
   TextArea,
-  BtnForm
+  BtnForm,
+  ErrorForm
 } from './styles'
 
 import AlertMessage from '../AlertMessage/index'
@@ -24,6 +26,14 @@ import AlertMessage from '../AlertMessage/index'
 const Contato = () => {
 
   const [showAlert, setShowAlert] = useState(false);
+
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();
+
+  const onSubmit = (dados) => {
+    console.log(dados)
+    setShowAlert(true)
+    reset()
+  };
 
   return (
     <Main>
@@ -39,33 +49,40 @@ const Contato = () => {
       </ContainerContact>
 
       <ContainerForm>
-        <Form>
+        <Form onSubmit={handleSubmit(onSubmit)}>
           <FormGroup>
             <LabelForm htmlFor="name">Nome</LabelForm>
-            <Input id="name" type="text" placeholder="Seu nome" />
+            <Input id="name" type="text" placeholder="seu nome"
+              {...register("nome", { required: "o nome é obrigatório" })} />
+            {errors?.nome?.type === 'required' && <ErrorForm>{errors.nome.message}</ErrorForm>}
           </FormGroup>
 
           <FormGroup>
             <LabelForm htmlFor="email">E-mail</LabelForm>
-            <Input id="email" type="email" placeholder="seuemail@dominio.com" />
+            <Input id="email" type="email" placeholder="email@dominio.com"
+              {...register("email", { required: "email é obrigatório" })} />
+            {errors?.email?.type === 'required' && <ErrorForm>{errors.email.message}</ErrorForm>}
           </FormGroup>
 
           <FormGroup>
             <LabelForm htmlFor="project">Tipo de Projeto</LabelForm>
-            <Select id="project">
-              <option value="">Selecione uma opção</option>
+            <Select id="project" {...register("projeto", { required: "selecione projeto" })}>
+              <option value="">---</option>
               <option value="Landing Page">Landing Page</option>
               <option value="Site Institucional">Site Institucional</option>
               <option value="Aplicação React">Aplicação React</option>
             </Select>
+            {errors?.projeto?.type === 'required' && <ErrorForm>{errors.projeto.message}</ErrorForm>}
           </FormGroup>
 
           <FormGroup>
             <LabelForm htmlFor="message">Mensagem</LabelForm>
-            <TextArea id="message" placeholder="Descreva brevemente o projeto..." />
+            <TextArea id="message" placeholder="descreva brevemente o projeto..."
+              {...register("mensagem", { required: "mensagem é obrigatório" })} />
+            {errors?.mensagem?.type === 'required' && <ErrorForm>{errors.mensagem.message}</ErrorForm>}
           </FormGroup>
 
-          <BtnForm type="button" onClick={() => setShowAlert(true)}>
+          <BtnForm type="submit">
             Enviar mensagem
           </BtnForm>
         </Form>
@@ -77,5 +94,4 @@ const Contato = () => {
     </Main>
   )
 }
-
 export default Contato;

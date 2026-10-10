@@ -185,3 +185,8 @@ export const BtnForm = styled.button`
     box-shadow: rgba(99, 102, 241, 0.35) 0px 8px 20px;
   }
 `;
+
+export const ErrorForm = styled.p`
+  color: red;
+  font-size: 0.8rem;
+`;
