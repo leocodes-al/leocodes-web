@@ -62,7 +62,6 @@ const Contato = () => {
       reset();
       setShowAlert(true);
     } catch (error) {
-      console.error("Erro ao enviar formulário:", error);
       alert("Não foi possível enviar sua mensagem. Tente novamente.");
     }
   };
