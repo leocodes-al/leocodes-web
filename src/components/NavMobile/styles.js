@@ -23,6 +23,6 @@ export const LinkMenu = styled.a`
   text-decoration: none;
 
   &:hover {
-    color: #00f0ff;
+    color: #6366f1;
   }
 `;

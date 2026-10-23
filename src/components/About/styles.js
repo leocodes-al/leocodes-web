@@ -59,6 +59,8 @@ export const SubTitle = styled.p`
 `;
 
 export const ContainerText = styled.div`
+  width: 700px;
+
   display: flex;
   flex-direction: column;
   gap: 15px;

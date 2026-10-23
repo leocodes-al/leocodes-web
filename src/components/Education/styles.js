@@ -95,7 +95,7 @@ export const TitleBox = styled.h3`
 `;
 
 export const Caption = styled.p`
-  color: rgb(0, 240, 255);
+  color: #6366f1;
   font-size: 0.875rem;
   margin-bottom: 0.5rem;
 

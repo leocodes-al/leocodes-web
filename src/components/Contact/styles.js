@@ -23,7 +23,7 @@ export const Main = styled.main`
 /* contatos */
 export const ContainerContact = styled.div`
   height: 500px;
-  width: auto;
+  width: 500px;
 
   display: flex;
   flex-direction: column;
@@ -66,6 +66,17 @@ export const ContainerLinks = styled.div`
   @media (max-width: 600px) {
     margin-top: 1.5rem;
     gap: 12px;
+  }
+`;
+
+export const Link = styled.a`
+  font-size: 1rem;
+  color: rgb(142, 154, 171);
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  @media (max-width: 600px) {
+    font-size: 0.8rem;
   }
 `;
 

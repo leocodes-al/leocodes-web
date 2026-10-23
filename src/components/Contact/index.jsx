@@ -9,6 +9,7 @@ import {
   TitleContact,
   SubTitle,
   ContainerLinks,
+  Link,
   SpanLinks,
   ContainerForm,
   Form,
@@ -70,12 +71,22 @@ const Contato = () => {
     <Main>
       <ContainerContact>
         <TitleContact>Vamos criar algo juntos?</TitleContact>
-        <SubTitle>Tem um projeto em mente? Vamos conversar sobre como transformar<br /> suas ideias em interfaces memoráveis.</SubTitle>
+        <SubTitle>Tem um projeto em mente? Vamos conversar sobre como transformar suas ideias em interfaces memoráveis.</SubTitle>
 
         <ContainerLinks>
-          <SubTitle><SpanLinks> <FaGithub /> GitHub: </SpanLinks>www.github.com/leocodes-al</SubTitle>
-          <SubTitle><SpanLinks> <FaLinkedin /> LinkedIn: </SpanLinks>www.linkedin.com/in/leonardo-nascimento10</SubTitle>
-          <SubTitle><SpanLinks> <FaInstagram /> Instagram: </SpanLinks>www.instagram.com/_leocodes/</SubTitle>
+          <SubTitle><SpanLinks> <FaGithub /> GitHub: </SpanLinks>
+            <Link href="https://www.linkedin.com/in/leonardo-nascimento10" target="_blank">www.linkedin.com/in/leonardo-nascimento10</Link>
+          </SubTitle>
+
+          <SubTitle>
+            <SpanLinks><FaLinkedin /> LinkedIn: </SpanLinks>
+            <Link href="https://www.linkedin.com/in/leonardo-nascimento10" target="_blank">www.linkedin.com/in/leonardo-nascimento10</Link>
+          </SubTitle>
+
+          <SubTitle>
+            <SpanLinks><FaInstagram /> Instagram: </SpanLinks>
+            <Link href="https://www.instagram.com/_leocodes/" target="_blank">www.instagram.com/_leocodes/</Link>
+          </SubTitle>
         </ContainerLinks>
       </ContainerContact>
 
@@ -101,7 +112,10 @@ const Contato = () => {
               <option value="">---</option>
               <option value="Landing Page">Landing Page</option>
               <option value="Site Institucional">Site Institucional</option>
-              <option value="Aplicação React">Aplicação React</option>
+              <option value="Aplicação React">Loja Virtual / E-commerce</option>
+              <option value="Aplicação React">Cardápio Digital</option>
+              <option value="Aplicação React">Portfólio Profissional</option>
+              <option value="Aplicação React">Interface Web Personalizada</option>
             </Select>
             {errors?.projeto?.type === 'required' && <ErrorForm>selecione projeto</ErrorForm>}
           </FormGroup>
