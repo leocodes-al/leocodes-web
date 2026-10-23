@@ -10,6 +10,7 @@ import Skills from './components/Skills/index'
 import Education from './components/Education/index'
 import Contact from './components/Contact/index'
 import Footer from './components/Footer/index'
+import Project from './components/Projects/index'
 
 
 function App() {
@@ -26,6 +27,11 @@ function App() {
 
       <div id="about">
         <About />
+      </div>
+      <Divider />
+
+      <div id="projects">
+        <Project />
       </div>
       <Divider />
 
